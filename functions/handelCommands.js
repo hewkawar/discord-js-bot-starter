@@ -20,15 +20,17 @@ module.exports = (client) => {
 
         (async () => {
             try {
-                console.log('Started refreshing application (/) commands.');
+                console.log(`[${client.shard.ids}] Started refreshing application (/) commands.`);
 
-                await rest.put(
+                const data = await rest.put(
                     Routes.applicationCommands(process.env.CLIENT_ID), {
-                    body: client.commandArray
-                },
+                        body: client.commandArray
+                    }
                 );
 
-                console.log('Successfully reloaded application (/) commands.');
+                client.commandsData = data;
+
+                console.log(`[${client.shard.ids}] Successfully reloaded ${data.length} application (/) commands.`);
             } catch (error) {
                 console.error(error);
             }
