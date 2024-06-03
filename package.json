@@ -1,0 +1,26 @@
+{
+  "name": "discord-js-bot-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hewkawar/discord-js-bot-starter.git"
+  },
+  "keywords": [
+    "discord-js-bot-starter"
+  ],
+  "author": "HewkawAr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hewkawar/discord-js-bot-starter/issues"
+  },
+  "homepage": "https://github.com/hewkawar/discord-js-bot-starter#readme",
+  "description": "",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  }
+}
